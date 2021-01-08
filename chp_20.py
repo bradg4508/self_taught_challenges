@@ -15,7 +15,7 @@ class Scraper():
                 url = tag.get("href")
                 if url is None:
                     continue
-                if "Aen" in url:
+                if "Aen" in url: """use "Aen" because it is at the end of each article"""
                     print("\n" + url)
                     f.write(url + "\n")
 
